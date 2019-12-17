@@ -1,0 +1,17 @@
+{% if student %}
+Name   : {{ student.student_name }}<br>
+Email : {{ user.email }}<br>
+DOB    : {{ student.dob }}<br>
+Gender : {{ student.gender }}<br>
+Mobile-No : {{ student.mobile_no}}<br>
+Father's Name : {{ student.father_name }}<br>
+Mothers Name : {{ student.mother_name }}<br>
+Department : {{ student.department }}<br>
+Image : <br><img src="/media/{{ student.student_image }}" alt="No image" width="300" height="150">
+{% else %}
+No Students are available
+{% endif %}
+<br><br><br>
+<a href="{% url 'kec:staff_list' %}">Department-Staff</a>|||||<a href="{% url 'kec:staff' %}">All-Staff</a>
+<br><br><br>
+<a href="{% url 'kec:index' %}">HOME</a>

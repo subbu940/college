@@ -1,0 +1,13 @@
+Name   : {{ staff.staff_name }}<br>
+Email : {{ user.email }}<br>
+Gender : {{ staff.gender }}<br>
+Mobile-No : {{ staff.mobile_no}}<br>
+Specialization : {{ staff.specialization }}<br>
+Experience : {{ staff.experience }}<br>
+Department : {{ staff.department }}<br>
+Image : <br><img src="/media/{{ staff.staff_image }}" alt="No image" width="300" height="150">
+<br><br><br>
+<a href="{% url 'kec:student_list' %}"> Department-Students</a>|||||<a href="{% url 'kec:student' %}">All-Students</a>
+
+<br><br><br>
+<a href="{% url 'kec:index' %}">HOME</a>

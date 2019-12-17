@@ -1,0 +1,12 @@
+{% if stu_list %}
+<ul>
+    {% for ea in stu_list%}
+            <li>{{ea.student_name}}</li>
+    {% endfor %}
+</ul>
+{% else %}
+    No Students are available
+{% endif %}
+
+<br><br><br>
+<a href="{& url 'kec:index' %}">HOME</a>

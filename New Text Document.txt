@@ -1,0 +1,30 @@
+
+C:\Users\SVT\projects\college>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, authtoken, contenttypes, kec, sessions
+Running migrations:
+  Applying authtoken.0001_initial... OK
+  Applying authtoken.0002_auto_20160226_1747... OK
+
+C:\Users\SVT\projects\college>python manage.py drf_create_token_subbu
+Unknown command: 'drf_create_token_subbu'. Did you mean drf_create_token?
+Type 'manage.py help' for usage.
+
+C:\Users\SVT\projects\college>python manage.py drf_create_token subbu
+Generated token 4978474b6641ce804eb03cfa3c6e0137565099a5 for user subbu
+
+C:\Users\SVT\projects\college>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 03, 2019 - 19:51:55
+Django version 2.2.6, using settings 'college.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Method Not Allowed: /kec/api-token-auth/
+[03/Dec/2019 19:53:26] "GET /kec/api-token-auth/ HTTP/1.1" 405 40
+Not Found: /kec/api-token-auth/ username=subbu password=subbu
+[03/Dec/2019 19:54:19] "GET /kec/api-token-auth/%20username=subbu%20password=subbu HTTP/1.1" 404 8430
+Not Found: /kec/api-token-auth/ username=subbu password=subbu
+[03/Dec/2019 19:56:07] "POST /kec/api-token-auth/%20username=subbu%20password=subbu HTTP/1.1" 404 8431

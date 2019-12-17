@@ -1,0 +1,12 @@
+{% if staf_list%}
+<ul>
+    {% for each in staf_list%}
+        <li>{{each.staff_name}}--{{each.specialization}}</li>
+    {% endfor %}
+</ul>
+{% else %}
+    No staff available
+{% endif %}
+
+br><br><br>
+<a href="{% url 'kec:index' %}">HOME</a>

@@ -1,0 +1,10 @@
+{% if sta %}
+<ul>
+    {% for s in sta %}
+        <li>{{ s.staff_name }}--{{ s.department }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+<br><br><br>
+<a href="{% url 'kec:index' %}">HOME</a>

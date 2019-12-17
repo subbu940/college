@@ -1,0 +1,9 @@
+<!--{% if error %}-->
+<!--    <h1> {{error}}</h1>-->
+<!--{% endif %}-->
+<form action="" method="post">
+    {% csrf_token %}
+    Username : <input name="username" type="text"><br>
+    Password : <input name="password" type="password"><br>
+    <input type="submit" value="Login">
+</form>
